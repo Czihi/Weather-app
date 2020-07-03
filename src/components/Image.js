@@ -1,10 +1,10 @@
 import React from 'react'
-import cold from './cold.png'
-import medium from './medium.png'
-import warm from './warm.png'
-import hot from './hot.png'
-import hot2 from './hot2.png'
-import './Image.css'
+import cold from '../images/cold.png'
+import medium from '../images/medium.png'
+import warm from '../images/warm.png'
+import hot from '../images/hot.png'
+import hot2 from '../images/hot2.png'
+import '../css/Image.css'
 const Image = (props)=>{
     let content = (
             <div>

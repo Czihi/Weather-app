@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './css/App.css';
 import Button from 'react-bootstrap/Button';
 import {
     BrowserRouter as Router,
     Route,
     Link
 } from 'react-router-dom';
-import Form2 from './Form2';
-import Result from './Result';
-import Form2NBP from './Form2NBP';
-import ResultNBP from './ResultNBP';
-import Image from './Image';
+import Form2 from './components/Form2';
+import Result from './components/Result';
+import Form2NBP from './components/Form2NBP';
+import ResultNBP from './components/ResultNBP';
+import Image from './components/Image';
 
 const APIKey = '19d6f8c65d72c23ed423c1b6b007518b'
 

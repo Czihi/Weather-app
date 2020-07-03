@@ -71,6 +71,7 @@ class App extends Component {
                     pressure: data.main.pressure,
                     wind: data.wind.speed,
                     clouds: data.clouds.all,
+                    currency: '',
                     feels: data.main.feels_like,
                 }))
             })
@@ -86,6 +87,7 @@ class App extends Component {
                     wind: '',
                     feels: '',
                     clouds: '',
+                    currency: '',
                     city: prevState.value
                 }))
             })
@@ -110,6 +112,7 @@ class App extends Component {
                     currencyName: data.currency,
                     rates: data.rates,
                     ratesLength: data.rates.length,
+                    city: '',
                     currency: prevState.valueNBP,
                 }))
             })
@@ -121,6 +124,7 @@ class App extends Component {
                     currencyName: "",
                     rates: "",
                     ratesLength: "",
+                    city: '',
                     currency: prevState.valueNBP,
                 }))
             })
@@ -157,15 +161,15 @@ class App extends Component {
                                             submit={this.handleCitySubmit}
                                         />
                                         <Link to="/">
-                                            <img className="backButton" src={back} alt="back"/>
+                                            <img className="backButton" src={back}
+                                                 alt="back"/>
                                         </Link>
                                     </div>
                                     <Result
                                         weather={this.state}
                                     />
                                     <Image
-                                        temperature={this.state.temp}
-                                        windSpeed={this.state.wind}
+                                        weather={this.state}
                                     />
                                 </div>
                             );
@@ -183,7 +187,8 @@ class App extends Component {
                                             submit={this.handleCurrencySubmit}
                                         />
                                         <Link to="/">
-                                            <img className="backButton" src={back} alt="back"/>
+                                            <img className="backButton" src={back}
+                                                 alt="back"/>
                                         </Link>
                                     </div>
                                     <div className="tendencyDiv">

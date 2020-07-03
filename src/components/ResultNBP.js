@@ -3,8 +3,8 @@ import Button from 'react-bootstrap/Button';
 
 const ResultNBP = props => {
     function show() {
-        var list = document.getElementById("lista")
-        var button = document.getElementById("showRates")
+        var list = document.getElementById("lista");
+        var button = document.getElementById("showRates");
         if (list.style.display !== "block") {
             list.style.display = "block";
             button.innerText = "Ukryj kursy z poprzednich dni"

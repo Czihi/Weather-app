@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
+import back from './images/back.png'
 import Button from 'react-bootstrap/Button';
 import {
     BrowserRouter as Router,
@@ -12,12 +13,14 @@ import Result from './components/Result';
 import Form2NBP from './components/Form2NBP';
 import ResultNBP from './components/ResultNBP';
 import Image from './components/Image';
+import Tendency from './components/Tendency';
 
-const APIKey = '19d6f8c65d72c23ed423c1b6b007518b'
+const APIKey = '19d6f8c65d72c23ed423c1b6b007518b';
 
 class App extends Component {
     state = {
         value: "",
+        valueNBP: "",
         date: "",
         city: '',
         sunrise: '',
@@ -29,22 +32,24 @@ class App extends Component {
         clouds: '',
         err: '',
         currency: '',
-        mid: '',
-    }
+    };
 
 
     handleInputChange = e => {
         this.setState({
             value: e.target.value
         })
-    }
-
-
+    };
+    handleInputChangeNBP = e => {
+        this.setState({
+            valueNBP: e.target.value
+        })
+    };
 
 
     handleCitySubmit = e => {
         e.preventDefault();
-        const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${APIKey}`
+        const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${APIKey}`;
 
         fetch(API)
             .then(response => {
@@ -55,7 +60,7 @@ class App extends Component {
             })
             .then(response => response.json())
             .then(data => {
-                const time = new Date().toLocaleTimeString()
+                const time = new Date().toLocaleTimeString();
                 this.setState(prevState => ({
                     err: false,
                     date: time,
@@ -70,7 +75,7 @@ class App extends Component {
                 }))
             })
             .catch(err => {
-                console.log(err)
+                console.log(err);
                 this.setState(prevState => ({
                     err: true,
                     date: "",
@@ -84,11 +89,11 @@ class App extends Component {
                     city: prevState.value
                 }))
             })
-    }
+    };
 
     handleCurrencySubmit = e => {
         e.preventDefault();
-        const API = `https://api.nbp.pl/api/exchangerates/rates/A/${this.state.value}/last/255`
+        const API = `https://api.nbp.pl/api/exchangerates/rates/A/${this.state.valueNBP}/last/255`;
         fetch(API)
             .then(response => {
                 if (response.ok) {
@@ -98,28 +103,28 @@ class App extends Component {
             })
             .then(response => response.json())
             .then(data => {
-                const time = new Date().toLocaleTimeString()
+                const time = new Date().toLocaleTimeString();
                 this.setState(prevState => ({
                     err: false,
                     date: time,
                     currencyName: data.currency,
                     rates: data.rates,
                     ratesLength: data.rates.length,
-                    currency: prevState.value,
+                    currency: prevState.valueNBP,
                 }))
             })
             .catch(err => {
-                console.log(err)
+                console.log(err);
                 this.setState(prevState => ({
                     err: true,
                     date: "",
                     currencyName: "",
                     rates: "",
                     ratesLength: "",
-                    currency: prevState.value,
+                    currency: prevState.valueNBP,
                 }))
             })
-    }
+    };
 
 
     render() {
@@ -145,11 +150,16 @@ class App extends Component {
                         () => {
                             return (
                                 <div className="App">
-                                    <Form2
-                                        value={this.state.value}
-                                        change={this.handleInputChange}
-                                        submit={this.handleCitySubmit}
-                                    />
+                                    <div className="tendencyDiv">
+                                        <Form2
+                                            value={this.state.value}
+                                            change={this.handleInputChange}
+                                            submit={this.handleCitySubmit}
+                                        />
+                                        <Link to="/">
+                                            <img className="backButton" src={back} alt="back"/>
+                                        </Link>
+                                    </div>
                                     <Result
                                         weather={this.state}
                                     />
@@ -166,17 +176,35 @@ class App extends Component {
                         () => {
                             return (
                                 <div className="App">
-                                    <Form2NBP
-                                        value={this.state.value}
-                                        change={this.handleInputChange}
-                                        submit={this.handleCurrencySubmit}
-                                    />
+                                    <div className="tendencyDiv">
+                                        <Form2NBP
+                                            value={this.state.valueNBP}
+                                            change={this.handleInputChangeNBP}
+                                            submit={this.handleCurrencySubmit}
+                                        />
+                                        <Link to="/">
+                                            <img className="backButton" src={back} alt="back"/>
+                                        </Link>
+                                    </div>
+                                    <div className="tendencyDiv">
+                                        <Tendency
+                                            nowthen={this.state}
+                                            period={"Tygodniowy"}
+                                            periodDiff={7}
+                                        />
+                                        <Tendency
+                                            nowthen={this.state}
+                                            period={"Miesięczny"}
+                                            periodDiff={30}
+                                        />
+                                        <Tendency
+                                            nowthen={this.state}
+                                            period={"Kwartalny"}
+                                            periodDiff={90}
+                                        />
+                                    </div>
                                     <ResultNBP
                                         currencies={this.state}
-                                    />
-                                    <Image
-                                        temperature={this.state.temp}
-                                        windSpeed={this.state.wind}
                                     />
                                 </div>
                             );

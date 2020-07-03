@@ -4,7 +4,7 @@ const Result = props => {
     const {city, sunrise, sunset, wind, date, pressure, temp, feels, clouds, err} = props.weather
     const sunr = new Date(sunrise * 1000).toLocaleTimeString();
     const suns = new Date(sunset * 1000).toLocaleTimeString();
-    const time= new Date().toLocaleDateString()
+    const time = new Date().toLocaleDateString()
     let content = null;
     if (!err && city) {
         content = (
@@ -20,12 +20,12 @@ const Result = props => {
             </div>
         )
     }
-return (
-    <div className="result">
-        {err ? `Nie mamy w bazie ${city}` : content}
-    </div>
+    return (
+        <div className="result">
+            {err ? `Nie mamy w bazie ${city}` : content}
+        </div>
 
-);
+    );
 }
 
 export default Result

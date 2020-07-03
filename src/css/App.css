@@ -2,19 +2,35 @@
   text-align: center;
 }
 .Form1{
-  margin-left: 2%;
-  max-width: 50%;
+  max-width: 80%;
 }
 .Label1{
-  margin-left: 2%;
   display:flex;
 }
 .Button1{
-  margin-left: 2%;
   display:flex;
 }
 .Mid{
 }
 .List{
  display: none;
+}
+.tendencyDiv {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+  margin-right: 30px;
+}
+.Tendency{
+  margin-bottom: 1%;
+  max-width: 50px;
+  max-height: 25px;
+  margin-left: 10px;
+}
+.backButton{
+    max-height: 150px;
+    max-width: 200px;
+    display:flex
 }

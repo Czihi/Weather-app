@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Image.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Image.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hot2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/medium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/warm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weather.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form2NBP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ResultNBP.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
@@ -29,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,6 +43,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -93,7 +86,16 @@
       <updated>1593634916312</updated>
       <workItem from="1593634920015" duration="9127000" />
       <workItem from="1593693678216" duration="8851000" />
+      <workItem from="1593779340667" duration="11512000" />
     </task>
+    <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
+      <created>1593779450657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593779450657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Project with weather app, added few labels and images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project with weather app, added few labels and images" />
   </component>
 </project>

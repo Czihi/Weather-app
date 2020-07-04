@@ -23,7 +23,7 @@ const ResultNBP = props => {
     for (var i = ratesLength - 2; i >= 0; i--) {
         index++;
         elements.push(<tr className="Mid" key={index}>
-            <td>{index+1}</td>
+            <td>{index}</td>
             <td>{rates[i].effectiveDate} </td>
             <td>{rates[i].mid}</td>
         </tr>);
@@ -32,7 +32,7 @@ const ResultNBP = props => {
         content = (
             <div><h3>Kursy dla: {currency}</h3>
                 <div><h4>Data i czas zapytania: {time} {date}</h4></div>
-                <div><h4>Ostatnie kursy dla: {currencyName}</h4></div>
+                <div><h4>Aktualny kurs dla: {currencyName}</h4></div>
                 <div className="Mid" key={index}><h4>Data: {rates[ratesLength - 1].effectiveDate} średni
                     kurs: {rates[ratesLength - 1].mid}</h4></div>
                 <Button id="showRates" onClick={show}>Pokaż kursy z poprzednich dni</Button>

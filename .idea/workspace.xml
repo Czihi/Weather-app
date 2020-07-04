@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/Czihi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/NBP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/OWM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopNavbarContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +95,7 @@
       <workItem from="1593779340667" duration="11512000" />
       <workItem from="1593799305937" duration="1081000" />
       <workItem from="1593802085793" duration="13950000" />
-      <workItem from="1593878861323" duration="15322000" />
+      <workItem from="1593878861323" duration="16196000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -148,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593889595959</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added navBar">
+      <created>1593894314478</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593894314478</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +173,7 @@
     <MESSAGE value="Changed form position, added rate tendencies and back button" />
     <MESSAGE value="Fixed some annoying bugs" />
     <MESSAGE value="Added codes table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added codes table" />
+    <MESSAGE value="Added navBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added navBar" />
   </component>
 </project>

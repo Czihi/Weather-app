@@ -1,12 +1,13 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
+import Table from 'react-bootstrap/Table';
 
 const ResultNBP = props => {
     function show() {
         var list = document.getElementById("lista");
         var button = document.getElementById("showRates");
-        if (list.style.display !== "block") {
-            list.style.display = "block";
+        if (list.style.display !== "table") {
+            list.style.display = "table";
             button.innerText = "Ukryj kursy z poprzednich dni"
         } else {
             list.style.display = "none";
@@ -21,18 +22,32 @@ const ResultNBP = props => {
     var index = 0;
     for (var i = ratesLength - 2; i >= 0; i--) {
         index++;
-        elements.push(<div className="Mid" key={index}>Data: {rates[i].effectiveDate} średni
-            kurs: {rates[i].mid}</div>);
+        elements.push(<tr className="Mid" key={index}>
+            <td>{rates[i].effectiveDate} </td><
+            td>{rates[i].mid}</td>
+        </tr>);
     }
     if (!err && currency) {
         content = (
-            <div>Kursy dla: {currency}
-                <div>Data i czas zapytania: {time} {date}</div>
-                <div>Ostatnie kursy dla: {currencyName}</div>
-                <div className="Mid" key={index}>Data: {rates[ratesLength - 1].effectiveDate} średni
-                    kurs: {rates[ratesLength - 1].mid}</div>
-                <div id="lista" className="List">{elements}</div>
+            <div><h3>Kursy dla: {currency}</h3>
+                <div><h4>Data i czas zapytania: {time} {date}</h4></div>
+                <div><h4>Ostatnie kursy dla: {currencyName}</h4></div>
+                <div className="Mid" key={index}><h4>Data: {rates[ratesLength - 1].effectiveDate} średni
+                    kurs: {rates[ratesLength - 1].mid}</h4></div>
                 <Button id="showRates" onClick={show}>Pokaż kursy z poprzednich dni</Button>
+                <br/>
+                <br/>
+                <Table id="lista" className="List" striped bordered hover size="sm" variant="dark">
+                    <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Kurs</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {elements}
+                    </tbody>
+                </Table>
             </div>
         )
     }

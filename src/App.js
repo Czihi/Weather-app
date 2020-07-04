@@ -14,6 +14,8 @@ import Form2NBP from './components/Form2NBP';
 import ResultNBP from './components/ResultNBP';
 import Image from './components/Image';
 import Tendency from './components/Tendency';
+import CodSection from "./components/CodSection";
+import CodesTable from "./components/CodesTable";
 
 const APIKey = '19d6f8c65d72c23ed423c1b6b007518b';
 
@@ -32,6 +34,8 @@ class App extends Component {
         clouds: '',
         err: '',
         currency: '',
+        codeErr: '',
+        codes: ''
     };
 
 
@@ -130,6 +134,31 @@ class App extends Component {
             })
     };
 
+    handleCodesRequest = e => {
+        const APICodes = 'https://api.nbp.pl/api/exchangerates/tables/a/'
+        fetch(APICodes)
+            .then(response => {
+                if (response.ok) {
+                    return response
+                }
+                throw Error("Brak informacji o walutach")
+            })
+            .then(response => response.json())
+            .then(data => {
+                this.setState({
+                    codeErr: false,
+                    codes: data[0].rates,
+                })
+            }).catch(err => {
+            console.log(err);
+            this.setState({
+                codeErr: true,
+                codes: ''
+            })
+        })
+
+
+    }
 
     render() {
         return (
@@ -186,6 +215,7 @@ class App extends Component {
                                             change={this.handleInputChangeNBP}
                                             submit={this.handleCurrencySubmit}
                                         />
+                                        <CodSection/>
                                         <Link to="/">
                                             <img className="backButton" src={back}
                                                  alt="back"/>
@@ -215,9 +245,24 @@ class App extends Component {
                             );
                         }
                     }/>
-                </div>
-            </Router>
-        );
+
+                <Route path="/codes" render={
+                    () => {
+                        return (
+                            <div className="App">
+                                <CodesTable
+                                    check={this.handleCodesRequest}
+                                    codes={this.state.codes}
+                                    codeErr={this.state.codeErr}
+                                />
+                            </div>
+                        )
+                    }
+                }/>
+            </div>
+    </Router>
+    )
+        ;
     }
 }
 

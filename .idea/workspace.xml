@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form2NBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2NBP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +98,8 @@
       <workItem from="1593693678216" duration="8851000" />
       <workItem from="1593779340667" duration="11512000" />
       <workItem from="1593799305937" duration="1081000" />
-      <workItem from="1593802085793" duration="13541000" />
+      <workItem from="1593802085793" duration="13950000" />
+      <workItem from="1593878861323" duration="10623000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -127,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593809758746</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed some annoying bugs">
+      <created>1593815686865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593815686865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +161,7 @@
     <MESSAGE value="Added main page, NBP API requests and routing" />
     <MESSAGE value="Reorganised project structure" />
     <MESSAGE value="Changed form position, added rate tendencies and back button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed form position, added rate tendencies and back button" />
+    <MESSAGE value="Fixed some annoying bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some annoying bugs" />
   </component>
 </project>

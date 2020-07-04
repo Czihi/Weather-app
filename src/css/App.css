@@ -10,10 +10,15 @@
 .Button1{
   display:flex;
 }
+.buttonCheck{
+    content: '\A'
+}
 .Mid{
 }
 .List{
  display: none;
+    max-width:50%;
+    margin: auto
 }
 .tendencyDiv {
   display:flex;

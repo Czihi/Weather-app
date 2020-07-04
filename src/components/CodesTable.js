@@ -2,13 +2,11 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 
 const CodesTable = (props) => {
-    window.onload = props.check;
     var codeErr = props.codeErr;
     var codes = props.codes;
     var elements = [];
-    console.log(codes)
+    window.onload=props.check;
     for (var i = 0; i < codes.length; i++) {
-        {
             elements.push(
                 <tr className="Mid" key={i}>
                     <td>{i+1}</td>
@@ -17,7 +15,6 @@ const CodesTable = (props) => {
                     <td>{codes[i].mid}</td>
                 </tr>
             )
-        }
     }
     let content = (
         <Table striped bordered hover size="sm" variant="dark">

@@ -16,6 +16,7 @@ import Image from './components/Image';
 import Tendency from './components/Tendency';
 import CodSection from "./components/CodSection";
 import CodesTable from "./components/CodesTable";
+import TopNavbar from "./components/TopNavbar";
 
 const APIKey = '19d6f8c65d72c23ed423c1b6b007518b';
 
@@ -168,6 +169,7 @@ class App extends Component {
                         () => {
                             return (
                                 <div className="App">
+                                    <TopNavbar/>
                                     <h3>Cześć, jakiego API chcesz uzyć ?</h3>
                                     <Link to="/currencies">
                                         <Button variant="primary">NBP API</Button>
@@ -183,6 +185,7 @@ class App extends Component {
                         () => {
                             return (
                                 <div className="App">
+                                    <TopNavbar/>
                                     <div className="tendencyDiv">
                                         <Form2
                                             value={this.state.value}
@@ -209,13 +212,16 @@ class App extends Component {
                         () => {
                             return (
                                 <div className="App">
+                                    <TopNavbar/>
                                     <div className="tendencyDiv">
                                         <Form2NBP
                                             value={this.state.valueNBP}
                                             change={this.handleInputChangeNBP}
                                             submit={this.handleCurrencySubmit}
                                         />
-                                        <CodSection/>
+                                        <CodSection
+                                            check={this.handleCodesRequest}
+                                        />
                                         <Link to="/">
                                             <img className="backButton" src={back}
                                                  alt="back"/>
@@ -246,23 +252,26 @@ class App extends Component {
                         }
                     }/>
 
-                <Route path="/codes" render={
-                    () => {
-                        return (
-                            <div className="App">
-                                <CodesTable
-                                    check={this.handleCodesRequest}
-                                    codes={this.state.codes}
-                                    codeErr={this.state.codeErr}
-                                />
-                            </div>
-                        )
-                    }
-                }/>
-            </div>
-    </Router>
-    )
-        ;
+                    <Route path="/codes" render={
+                        () => {
+
+                            return (
+                                <div className="App">
+                                    <TopNavbar/>
+
+                                    <CodesTable
+                                        check={this.handleCodesRequest}
+                                        codes={this.state.codes}
+                                        codeErr={this.state.codeErr}
+                                    />
+                                </div>
+                            )
+                        }
+                    }/>
+                </div>
+            </Router>
+        )
+            ;
     }
 }
 

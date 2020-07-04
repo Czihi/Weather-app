@@ -17,7 +17,7 @@
 }
 .List{
  display: none;
-    max-width:50%;
+    max-width:100%;
     margin: auto
 }
 .tendencyDiv {
@@ -38,4 +38,8 @@
     max-height: 150px;
     max-width: 200px;
     display:flex
+}
+
+.topNavbar{
+    justify-content: space-between;
 }

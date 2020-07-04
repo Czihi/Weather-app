@@ -23,8 +23,9 @@ const ResultNBP = props => {
     for (var i = ratesLength - 2; i >= 0; i--) {
         index++;
         elements.push(<tr className="Mid" key={index}>
-            <td>{rates[i].effectiveDate} </td><
-            td>{rates[i].mid}</td>
+            <td>{index+1}</td>
+            <td>{rates[i].effectiveDate} </td>
+            <td>{rates[i].mid}</td>
         </tr>);
     }
     if (!err && currency) {
@@ -40,6 +41,7 @@ const ResultNBP = props => {
                 <Table id="lista" className="List" striped bordered hover size="sm" variant="dark">
                     <thead>
                     <tr>
+                        <th>#</th>
                         <th>Data</th>
                         <th>Kurs</th>
                     </tr>

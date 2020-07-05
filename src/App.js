@@ -98,6 +98,8 @@ class App extends Component {
             })
     };
 
+
+
     handleCurrencySubmit = e => {
         e.preventDefault();
         const API = `https://api.nbp.pl/api/exchangerates/rates/A/${this.state.valueNBP}/last/255`;
@@ -264,6 +266,17 @@ class App extends Component {
                                         codes={this.state.codes}
                                         codeErr={this.state.codeErr}
                                     />
+                                </div>
+                            )
+                        }
+                    }/>
+
+                    <Route path="/author" render={
+                        () => {
+
+                            return(
+                                <div className="App">
+                                    <TopNavbar/>
                                 </div>
                             )
                         }

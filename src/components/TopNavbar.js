@@ -23,7 +23,7 @@ const TopNavbar = (props) => {
             <TopNavbarContent
                 source='/Czihi.png'
                 description='Autor'
-                to='/'
+                to='/author'
             />
 
 

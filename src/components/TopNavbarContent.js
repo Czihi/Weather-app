@@ -21,13 +21,12 @@ const TopNavbarContent=(props)=>{
     if(width<700){
         description=""
     }
-    console.log(window.location.origin)
     let content=(
         <Link to={props.to}>
         <Navbar.Brand id="test">
             <img
                 alt={props.description}
-                src={window.location.origin + props.source}
+                src={props.source}
                 width="30"
                 height="30"
                 className="d-inline-block align-top"

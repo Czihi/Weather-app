@@ -1,6 +1,10 @@
 import React, { useLayoutEffect, useState } from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import {Link} from "react-router-dom";
+import czihi from "../images/Czihi.png"
+import home from "../images/logo192.png"
+import nbp from "../images/NBP.png"
+import omw from "../images/OWM.png"
 
 function useWindowSize() {
     const [size, setSize] = useState(0);
@@ -17,7 +21,9 @@ function useWindowSize() {
 
 const TopNavbarContent=(props)=>{
     const width = useWindowSize();
-    var description=props.description
+    var description=props.description;
+    let iconObj =
+        {"czihi": czihi, "home": home, "nbp": nbp, "omw": omw}
     if(width<700){
         description=""
     }
@@ -26,7 +32,7 @@ const TopNavbarContent=(props)=>{
         <Navbar.Brand id="test">
             <img
                 alt={props.description}
-                src={props.source}
+                src={iconObj[props.source]}
                 width="30"
                 height="30"
                 className="d-inline-block align-top"

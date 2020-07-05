@@ -8,22 +8,22 @@ const TopNavbar = (props) => {
     let content=(
         <Navbar className="topNavbar" bg="dark" variant="dark">
             <TopNavbarContent
-                source='/logo192.png'
+                source='home'
                 description='Strona główna'
                 to='/'
             />
             <TopNavbarContent
-                source='/NBP.png'
+                source='nbp'
                 description='NBP API'
                 to='/currencies'
             />
             <TopNavbarContent
-                source='/OWM.png'
+                source='omw'
                 description='Open Weather Map API'
                 to={'/weather'}
             />
             <TopNavbarContent
-                source='/Czihi.png'
+                source='czihi'
                 description='Autor'
                 to='/author'
             />

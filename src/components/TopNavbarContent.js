@@ -27,6 +27,7 @@ const TopNavbarContent=(props)=>{
     if(width<700){
         description=""
     }
+    console.log(iconObj[props.source])
     let content=(
         <Link to={props.to}>
         <Navbar.Brand id="test">

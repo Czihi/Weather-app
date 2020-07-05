@@ -177,14 +177,14 @@ class App extends Component {
                                        h3Label="Kursów walut"
                                        link="/currencies"
                                        buttonLabel="NBP API"
-                                       source="/coins.png"
+                                       source="coins"
                                        alt="coins"
                                        />
                                         <API
                                             h3Label="Informacji o pogodzie"
                                             link="/weather"
                                             buttonLabel="Open Weather Map API"
-                                            source="/weather.png"
+                                            source="weather"
                                             alt="weather"
                                         />
                                     </div>

@@ -15,7 +15,7 @@ const ResultNBP = props => {
         }
     }
 
-    const {currency, currencyName, date, rates, ratesLength, err} = props.currencies
+    const {currency, currencyName, date, rates, ratesLength, err2} = props.currencies
     const time = new Date().toLocaleDateString();
     let content = null;
     var elements = [];
@@ -28,7 +28,7 @@ const ResultNBP = props => {
             <td>{rates[i].mid}</td>
         </tr>);
     }
-    if (!err && currency) {
+    if (!err2 && currency) {
         content = (
             <div><h3>Kursy dla: {currency}</h3>
                 <div><h4>Data i czas zapytania: {time} {date}</h4></div>
@@ -55,7 +55,7 @@ const ResultNBP = props => {
     }
     return (
         <div className="result">
-            {err ? `Nie mamy w bazie ${currency}` : content}
+            {err2 ? `Nie mamy w bazie ${currency}` : content}
         </div>
 
     );

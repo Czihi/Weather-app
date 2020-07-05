@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 const CodSection = props => {
     let content=(
         <div>
+            <br/>
         <h4>Nie wiesz jaki kod ma interesująca Cię waluta?</h4>
             <br/>
             <Link to="/codes">

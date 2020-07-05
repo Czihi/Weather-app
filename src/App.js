@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/App.css';
-import back from './images/back.png'
-import Button from 'react-bootstrap/Button';
 import {
     BrowserRouter as Router,
-    Route,
-    Link
+    Route
 } from 'react-router-dom';
 import Form2 from './components/Form2';
 import Result from './components/Result';
@@ -17,11 +14,12 @@ import Tendency from './components/Tendency';
 import CodSection from "./components/CodSection";
 import CodesTable from "./components/CodesTable";
 import TopNavbar from "./components/TopNavbar";
-
+import API from "./components/API";
 const APIKey = '19d6f8c65d72c23ed423c1b6b007518b';
 
 class App extends Component {
     state = {
+        size: 1920,
         value: "",
         valueNBP: "",
         date: "",
@@ -36,7 +34,8 @@ class App extends Component {
         err: '',
         currency: '',
         codeErr: '',
-        codes: ''
+        codes: '',
+        err2: '',
     };
 
 
@@ -99,7 +98,6 @@ class App extends Component {
     };
 
 
-
     handleCurrencySubmit = e => {
         e.preventDefault();
         const API = `https://api.nbp.pl/api/exchangerates/rates/A/${this.state.valueNBP}/last/255`;
@@ -114,7 +112,7 @@ class App extends Component {
             .then(data => {
                 const time = new Date().toLocaleTimeString();
                 this.setState(prevState => ({
-                    err: false,
+                    err2: false,
                     date: time,
                     currencyName: data.currency,
                     rates: data.rates,
@@ -126,7 +124,7 @@ class App extends Component {
             .catch(err => {
                 console.log(err);
                 this.setState(prevState => ({
-                    err: true,
+                    err2: true,
                     date: "",
                     currencyName: "",
                     rates: "",
@@ -134,11 +132,10 @@ class App extends Component {
                     city: '',
                     currency: prevState.valueNBP,
                 }))
-            })
+            });
     };
-
-    handleCodesRequest = e => {
-        const APICodes = 'https://api.nbp.pl/api/exchangerates/tables/a/'
+    handleCodesRequest = () => {
+        const APICodes = 'https://api.nbp.pl/api/exchangerates/tables/a/';
         fetch(APICodes)
             .then(response => {
                 if (response.ok) {
@@ -161,43 +158,51 @@ class App extends Component {
         })
 
 
-    }
+    };
+
 
     render() {
         return (
             <Router>
                 <div className="App">
+                    <TopNavbar/>
                     <Route path="/" exact render={
                         () => {
+                            document.title = "Strona główna"
                             return (
                                 <div className="App">
-                                    <TopNavbar/>
-                                    <h3>Cześć, jakiego API chcesz uzyć ?</h3>
-                                    <Link to="/currencies">
-                                        <Button variant="primary">NBP API</Button>
-                                    </Link>
-                                    <Link to="/weather">
-                                        <Button variant="primary">OpenWeatherMap API</Button>
-                                    </Link>
+                                    <h3>Czego szukasz na tej stronie?</h3>
+                                    <div className="tendencyDiv">
+                                       <API
+                                       h3Label="Kursów walut"
+                                       link="/currencies"
+                                       buttonLabel="NBP API"
+                                       source="/coins.png"
+                                       alt="coins"
+                                       />
+                                        <API
+                                            h3Label="Informacji o pogodzie"
+                                            link="/weather"
+                                            buttonLabel="Open Weather Map API"
+                                            source="/weather.png"
+                                            alt="weather"
+                                        />
+                                    </div>
                                 </div>
                             );
                         }
                     }/>
                     <Route path="/weather" render={
                         () => {
+                            document.title = "Open Weather Map API"
                             return (
                                 <div className="App">
-                                    <TopNavbar/>
                                     <div className="tendencyDiv">
                                         <Form2
                                             value={this.state.value}
                                             change={this.handleInputChange}
                                             submit={this.handleCitySubmit}
                                         />
-                                        <Link to="/">
-                                            <img className="backButton" src={back}
-                                                 alt="back"/>
-                                        </Link>
                                     </div>
                                     <Result
                                         weather={this.state}
@@ -212,10 +217,10 @@ class App extends Component {
 
                     <Route path="/currencies" render={
                         () => {
+                            document.title = "NBP API"
                             return (
                                 <div className="App">
-                                    <TopNavbar/>
-                                    <div className="tendencyDiv">
+                                    <div className="group">
                                         <Form2NBP
                                             value={this.state.valueNBP}
                                             change={this.handleInputChangeNBP}
@@ -224,10 +229,6 @@ class App extends Component {
                                         <CodSection
                                             check={this.handleCodesRequest}
                                         />
-                                        <Link to="/">
-                                            <img className="backButton" src={back}
-                                                 alt="back"/>
-                                        </Link>
                                     </div>
                                     <div className="tendencyDiv">
                                         <Tendency
@@ -256,10 +257,9 @@ class App extends Component {
 
                     <Route path="/codes" render={
                         () => {
-
+                            document.title = "Kursy walut"
                             return (
                                 <div className="App">
-                                    <TopNavbar/>
 
                                     <CodesTable
                                         check={this.handleCodesRequest}
@@ -273,10 +273,9 @@ class App extends Component {
 
                     <Route path="/author" render={
                         () => {
-
-                            return(
+                            document.title = "Autor"
+                            return (
                                 <div className="App">
-                                    <TopNavbar/>
                                 </div>
                             )
                         }

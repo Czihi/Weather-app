@@ -4,11 +4,11 @@ import falling from '../images/falling.png'
 import '../css/App.css'
 const Tendency = (props)=>{
     let content = null;
-    const {currency, rates, ratesLength, err} = props.nowthen
+    const {currency, rates, ratesLength, err2} = props.nowthen
     const period=props.period
     const periodDiff=props.periodDiff
     var i=ratesLength-1
-    if (!err && currency) {
+    if (!err2 && currency) {
         var diff=+(rates[i].mid - rates[i-periodDiff].mid).toFixed(6)
         if (diff>=0) {
             content = (
@@ -28,7 +28,7 @@ const Tendency = (props)=>{
     }
     return (
         <div className="result">
-            {err ? null : content}
+            {err2 ? null : content}
         </div>
 
     );

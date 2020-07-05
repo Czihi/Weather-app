@@ -2,10 +2,13 @@
   text-align: center;
 }
 .Form1{
-  max-width: 80%;
+  max-width: 60%;
 }
 .Label1{
   display:flex;
+    max-width: 60%;
+    font-size: large;
+    font-weight: bolder;
 }
 .Button1{
   display:flex;
@@ -28,6 +31,11 @@
   align-self: center;
   margin-right: 30px;
 }
+.group{
+    display:flex;
+    margin-left: 5%;
+    align-content: center;
+}
 .Tendency{
   margin-bottom: 1%;
   max-width: 50px;
@@ -42,4 +50,13 @@
 
 .topNavbar{
     justify-content: space-between;
+}
+.mainSiteImage{
+
+    width: 700px;
+    height: 500px;
+}
+.littleImage{
+    width: 140px;
+    height: 100px;
 }

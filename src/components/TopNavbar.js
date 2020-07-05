@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import TopNavbarContent from "./TopNavbarContent";
 
+
+
 const TopNavbar = (props) => {
     let content=(
         <Navbar className="topNavbar" bg="dark" variant="dark">
@@ -31,5 +33,6 @@ const TopNavbar = (props) => {
     );
 return(content)
 };
+
 
 export default TopNavbar

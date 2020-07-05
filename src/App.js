@@ -15,7 +15,6 @@ import CodSection from "./components/CodSection";
 import CodesTable from "./components/CodesTable";
 import TopNavbar from "./components/TopNavbar";
 import API from "./components/API";
-import testowy from "./images/warm.png"
 const APIKey = '19d6f8c65d72c23ed423c1b6b007518b';
 
 class App extends Component {
@@ -278,7 +277,6 @@ class App extends Component {
 
                             return (
                                 <div className="App">
-                                    <img src={testowy} alt="test"/>
                                 </div>
                             )
                         }

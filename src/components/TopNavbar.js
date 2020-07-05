@@ -10,22 +10,22 @@ const TopNavbar = (props) => {
             <TopNavbarContent
                 source='home'
                 description='Strona główna'
-                to='/'
+                to='/Weather-app'
             />
             <TopNavbarContent
                 source='nbp'
                 description='NBP API'
-                to='/currencies'
+                to='/Weather-app/currencies'
             />
             <TopNavbarContent
                 source='omw'
                 description='Open Weather Map API'
-                to={'/weather'}
+                to={'/Weather-app/weather'}
             />
             <TopNavbarContent
                 source='czihi'
                 description='Autor'
-                to='/author'
+                to='/Weather-app/author'
             />
 
 

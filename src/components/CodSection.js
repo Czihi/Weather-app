@@ -8,7 +8,7 @@ const CodSection = props => {
             <br/>
         <h4>Nie wiesz jaki kod ma interesująca Cię waluta?</h4>
             <br/>
-            <Link to="/codes">
+            <Link to="/Weather-app/codes">
         <Button className = "buttonCheck" variant = "primary" onClick={props.check}> Sprawdź tutaj!</Button>
             </Link>
         </div>

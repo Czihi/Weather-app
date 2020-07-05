@@ -166,7 +166,7 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <TopNavbar/>
-                    <Route path="/" exact render={
+                    <Route path="/Weather-app" exact render={
                         () => {
                             document.title = "Strona główna"
                             return (
@@ -175,14 +175,14 @@ class App extends Component {
                                     <div className="tendencyDiv">
                                        <API
                                        h3Label="Kursów walut"
-                                       link="/currencies"
+                                       link="/Weather-app/currencies"
                                        buttonLabel="NBP API"
                                        source="coins"
                                        alt="coins"
                                        />
                                         <API
                                             h3Label="Informacji o pogodzie"
-                                            link="/weather"
+                                            link="/Weather-app/weather"
                                             buttonLabel="Open Weather Map API"
                                             source="weather"
                                             alt="weather"
@@ -192,7 +192,7 @@ class App extends Component {
                             );
                         }
                     }/>
-                    <Route path="/weather" render={
+                    <Route path="/Weather-app/weather" render={
                         () => {
                             document.title = "Open Weather Map API"
                             return (
@@ -215,7 +215,7 @@ class App extends Component {
                         }
                     }/>
 
-                    <Route path="/currencies" render={
+                    <Route path="/Weather-app/currencies" render={
                         () => {
                             document.title = "NBP API"
                             return (
@@ -255,7 +255,7 @@ class App extends Component {
                         }
                     }/>
 
-                    <Route path="/codes" render={
+                    <Route path="/Weather-app/codes" render={
                         () => {
                             document.title = "Kursy walut"
                             return (
@@ -271,7 +271,7 @@ class App extends Component {
                         }
                     }/>
 
-                    <Route path="/author" render={
+                    <Route path="/Weather-app/author" render={
                         () => {
                             document.title = "Autor"
 

@@ -4,8 +4,6 @@
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbar.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +99,9 @@
       <workItem from="1593878861323" duration="16253000" />
       <workItem from="1593908967526" duration="51000" />
       <workItem from="1593910155873" duration="1305000" />
-      <workItem from="1593952272920" duration="18921000" />
+      <workItem from="1593952272920" duration="19805000" />
+      <workItem from="1593975259330" duration="733000" />
+      <workItem from="1593984159110" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593973322456</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changed route paths">
+      <created>1593973805723</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1593973805723</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,14 +269,14 @@
     <MESSAGE value="Made navbar responsive, changed home page" />
     <MESSAGE value="Deploy" />
     <MESSAGE value="Trying to fix image paths for deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix image paths for deploy" />
+    <MESSAGE value="Changed route paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed route paths" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Form2.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

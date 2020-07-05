@@ -53,7 +53,7 @@ class App extends Component {
 
     handleCitySubmit = e => {
         e.preventDefault();
-        const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${APIKey}`;
+        const API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${APIKey}`;
 
         fetch(API)
             .then(response => {
@@ -168,7 +168,7 @@ class App extends Component {
                     <TopNavbar/>
                     <Route path="/Weather-app" exact render={
                         () => {
-                            document.title = "Strona główna"
+                            document.title = "Strona główna";
                             return (
                                 <div className="App">
                                     <h3>Czego szukasz na tej stronie?</h3>
@@ -194,7 +194,7 @@ class App extends Component {
                     }/>
                     <Route path="/Weather-app/weather" render={
                         () => {
-                            document.title = "Open Weather Map API"
+                            document.title = "Open Weather Map API";
                             return (
                                 <div className="App">
                                     <div className="tendencyDiv">
@@ -217,7 +217,7 @@ class App extends Component {
 
                     <Route path="/Weather-app/currencies" render={
                         () => {
-                            document.title = "NBP API"
+                            document.title = "NBP API";
                             return (
                                 <div className="App">
                                     <div className="group">

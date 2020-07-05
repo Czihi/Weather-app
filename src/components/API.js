@@ -13,7 +13,9 @@ const API=(props)=>{
         <h3>{props.h3Label}</h3>
         <Link to={props.link}>
         <Button variant="primary">{props.buttonLabel}</Button>
-    <img className="mainSiteImage" src={iconObj[props.source]} alt={props.alt}/>
+    <img className="mainSiteImage"
+         src={iconObj[props.source]}
+         alt={props.alt}/>
     </Link>
         </div>
     )

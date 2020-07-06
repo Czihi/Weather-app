@@ -13,14 +13,14 @@ const Tendency = (props)=>{
         if (diff>=0) {
             content = (
                 <div className="tendencyDiv">
-                    <h3>{period} wzrost: {diff}</h3>
+                    <h3 className="textResponsive">{period} wzrost: {diff}</h3>
                     <img className="Tendency" src={rising} alt="rising"/>
                 </div>
             )
         } else {
             content = (
                 <div className="tendencyDiv">
-                    <h3>{period} spadek: {diff}</h3>
+                    <h3 className="textResponsive">{period} spadek: {diff}</h3>
                     <img className="Tendency" src={falling} alt="falling"/>
                 </div>
             )

@@ -3,18 +3,20 @@
 }
 .Form1{
   max-width: 60%;
+    align-self: center;
 }
 .Label1{
   display:flex;
-    max-width: 60%;
-    font-size: large;
+    font-size: min(3vw, 20px);
     font-weight: bolder;
 }
 .Button1{
   display:flex;
 }
-.buttonCheck{
-    content: '\A'
+.buttonResponsive{
+    width:100%;
+    max-width:60%;
+    font-size: min(3vw, 15px);
 }
 .Mid{
 }
@@ -29,17 +31,22 @@
   align-items: center;
   justify-items: center;
   align-self: center;
-  margin-right: 30px;
+    margin-left: 3%;
+  margin-right: 3%;
 }
 .group{
     display:flex;
-    margin-left: 5%;
+    margin-left: 3%;
+
+    margin-right: 3%;
     align-content: center;
 }
 .Tendency{
   margin-bottom: 1%;
-  max-width: 50px;
-  max-height: 25px;
+    width: 100%;
+    height: auto;
+    max-height:25px;
+    max-width: 50px;
   margin-left: 10px;
 }
 .backButton{
@@ -51,12 +58,22 @@
 .topNavbar{
     justify-content: space-between;
 }
+.API{
+    margin-left: 3%;
+}
 .mainSiteImage{
+    width: 100%;
+    height: auto;
 
-    width: 700px;
-    height: 500px;
 }
 .littleImage{
     width: 140px;
     height: 100px;
+}
+
+.textResponsive{
+    font-size:max(8px, 2vw);
+}
+.textResponsive2{
+    font-size:min(30px, 4vw);
 }

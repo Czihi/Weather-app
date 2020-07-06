@@ -4,12 +4,11 @@ import {Link} from "react-router-dom";
 
 const CodSection = props => {
     let content=(
-        <div>
-            <br/>
-        <h4>Nie wiesz jaki kod ma interesująca Cię waluta?</h4>
+        <div className="Form1">
+        <h4 className="textResponsive2">Nie wiesz jaki kod ma interesująca Cię waluta?</h4>
             <br/>
             <Link to="/Weather-app/codes">
-        <Button className = "buttonCheck" variant = "primary" onClick={props.check}> Sprawdź tutaj!</Button>
+        <Button className = "buttonResponsive" variant = "primary" onClick={props.check}> Sprawdź tutaj!</Button>
             </Link>
         </div>
 )

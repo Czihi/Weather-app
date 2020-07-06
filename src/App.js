@@ -15,6 +15,7 @@ import CodSection from "./components/CodSection";
 import CodesTable from "./components/CodesTable";
 import TopNavbar from "./components/TopNavbar";
 import API from "./components/API";
+
 const APIKey = '19d6f8c65d72c23ed423c1b6b007518b';
 
 class App extends Component {
@@ -171,17 +172,17 @@ class App extends Component {
                             document.title = "Strona główna";
                             return (
                                 <div className="App">
-                                    <h3>Czego szukasz na tej stronie?</h3>
+                                    <h3 className="textResponsive2">Interesują Cię:</h3>
                                     <div className="tendencyDiv">
-                                       <API
-                                       h3Label="Kursów walut"
-                                       link="/Weather-app/currencies"
-                                       buttonLabel="NBP API"
-                                       source="coins"
-                                       alt="coins"
-                                       />
                                         <API
-                                            h3Label="Informacji o pogodzie"
+                                            h3Label="Kursy walut"
+                                            link="/Weather-app/currencies"
+                                            buttonLabel="Narodowy Bank Polski API"
+                                            source="coins"
+                                            alt="coins"
+                                        />
+                                        <API
+                                            h3Label="Pogoda"
                                             link="/Weather-app/weather"
                                             buttonLabel="Open Weather Map API"
                                             source="weather"
@@ -217,7 +218,7 @@ class App extends Component {
 
                     <Route path="/Weather-app/currencies" render={
                         () => {
-                            document.title = "NBP API";
+                            document.title = "Narodowy Bank Polski API";
                             return (
                                 <div className="App">
                                     <div className="group">
@@ -231,6 +232,9 @@ class App extends Component {
                                         />
                                     </div>
                                     <div className="tendencyDiv">
+                                        <br/>
+                                        <br/>
+                                        <br/>
                                         <Tendency
                                             nowthen={this.state}
                                             period={"Tygodniowy"}

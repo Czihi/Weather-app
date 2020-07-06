@@ -24,10 +24,9 @@ const TopNavbarContent=(props)=>{
     var description=props.description;
     let iconObj =
         {"czihi": czihi, "home": home, "nbp": nbp, "omw": omw}
-    if(width<700){
+    if(width<900){
         description=""
     }
-    console.log(iconObj[props.source])
     let content=(
         <Link to={props.to}>
         <Navbar.Brand id="test">

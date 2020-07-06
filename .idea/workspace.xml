@@ -3,7 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/coins.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/coins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/weather.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form2NBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2NBP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tendency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tendency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopNavbarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbarContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/coins.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/coins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/falling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/falling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/rising.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rising.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/weather.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,13 +59,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Studia\first-app\src\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Studia\first-app\public" />
       <recent name="C:\Studia\first-app\src\css" />
       <recent name="C:\Studia\first-app\src\components" />
+      <recent name="C:\Studia\first-app\src\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Studia\first-app\public" />
       <recent name="C:\Studia\first-app\src\images" />
     </key>
   </component>
@@ -101,7 +117,9 @@
       <workItem from="1593910155873" duration="1305000" />
       <workItem from="1593952272920" duration="19805000" />
       <workItem from="1593975259330" duration="733000" />
-      <workItem from="1593984159110" duration="59000" />
+      <workItem from="1593984159110" duration="901000" />
+      <workItem from="1593995900706" duration="342000" />
+      <workItem from="1594047655861" duration="6441000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -236,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593973805723</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Changed API request from http to https + some other small fixes">
+      <created>1593984370999</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1593984370999</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +295,8 @@
     <MESSAGE value="Deploy" />
     <MESSAGE value="Trying to fix image paths for deploy" />
     <MESSAGE value="Changed route paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed route paths" />
+    <MESSAGE value="Changed API request from http to https + some other small fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed API request from http to https + some other small fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -278,6 +304,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Form2.js</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/CodSection.js</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,18 +1,18 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import weather from "../images/coins.png";
-import coins from "../images/weather.png";
+import weather from "../images/weather.png";
+import coins from "../images/coins.png";
 
 
 const API=(props)=>{
     let iconObj =
         {"weather": weather, "coins": coins}
     let content=(
-        <div>
-        <h3>{props.h3Label}</h3>
+        <div className="API">
+        <h5 className="textResponsive2">{props.h3Label}</h5>
         <Link to={props.link}>
-        <Button variant="primary">{props.buttonLabel}</Button>
+            <Button className="buttonResponsive" variant="primary">{props.buttonLabel}</Button>
     <img className="mainSiteImage"
          src={iconObj[props.source]}
          alt={props.alt}/>

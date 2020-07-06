@@ -14,7 +14,7 @@ const TopNavbar = (props) => {
             />
             <TopNavbarContent
                 source='nbp'
-                description='NBP API'
+                description='Narodowy Bank Polski API'
                 to='/Weather-app/currencies'
             />
             <TopNavbarContent

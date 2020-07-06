@@ -16,6 +16,12 @@ const CodesTable = (props) => {
                 </tr>
             )
     }
+    var days = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
+    var day=days[new Date().getDay()]
+    if(day==="Niedziela" || day==="Sobota"){
+        day="Piątek"
+    }
+
     let content = (
         <Table striped bordered hover size="sm" variant="dark">
             <thead>
@@ -23,7 +29,7 @@ const CodesTable = (props) => {
                 <th>#</th>
                 <th>Kod</th>
                 <th>Nazwa waluty</th>
-                <th>Dzisiejszy kurs</th>
+                <th>Ostatni kurs ({day})</th>
             </tr>
             </thead>
             <tbody>

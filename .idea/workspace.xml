@@ -3,22 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/coins.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/coins.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/weather.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form2NBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2NBP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CodesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tendency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tendency.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopNavbarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbarContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/coins.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/coins.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/falling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/falling.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/rising.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rising.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/weather.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +106,7 @@
       <workItem from="1593975259330" duration="733000" />
       <workItem from="1593984159110" duration="901000" />
       <workItem from="1593995900706" duration="342000" />
-      <workItem from="1594047655861" duration="6441000" />
+      <workItem from="1594047655861" duration="11921000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -261,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593984370999</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Many responsive changes">
+      <created>1594054205966</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1594054205966</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +290,8 @@
     <MESSAGE value="Trying to fix image paths for deploy" />
     <MESSAGE value="Changed route paths" />
     <MESSAGE value="Changed API request from http to https + some other small fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed API request from http to https + some other small fixes" />
+    <MESSAGE value="Many responsive changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Many responsive changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

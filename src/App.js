@@ -238,17 +238,17 @@ class App extends Component {
                                         <Tendency
                                             nowthen={this.state}
                                             period={"Tygodniowy"}
-                                            periodDiff={7}
+                                            periodDiff={5}
                                         />
                                         <Tendency
                                             nowthen={this.state}
                                             period={"Miesięczny"}
-                                            periodDiff={30}
+                                            periodDiff={22}
                                         />
                                         <Tendency
                                             nowthen={this.state}
                                             period={"Kwartalny"}
-                                            periodDiff={90}
+                                            periodDiff={65}
                                         />
                                     </div>
                                     <ResultNBP

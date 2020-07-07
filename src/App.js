@@ -15,6 +15,10 @@ import CodSection from "./components/CodSection";
 import CodesTable from "./components/CodesTable";
 import TopNavbar from "./components/TopNavbar";
 import API from "./components/API";
+import About from "./components/About"
+
+import autor from "./images/autor.png";
+
 
 const APIKey = process.env.REACT_APP_AUTH_TOKEN;
 class App extends Component {
@@ -280,6 +284,10 @@ class App extends Component {
 
                             return (
                                 <div className="App">
+                                    <div className="tendencyDiv">
+                                    <img className="autorResponsive" src={autor} alt="autor"/>
+                                    <About/>
+                                    </div>
                                 </div>
                             )
                         }

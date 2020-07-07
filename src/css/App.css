@@ -77,3 +77,12 @@
 .textResponsive2{
     font-size:min(30px, 4vw);
 }
+.autorResponsive{
+    margin-left: 3%;
+    margin-top: 3%;
+    width:50%;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/autor.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ConvertRate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Converter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form2NBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2NBP.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,7 +111,9 @@
       <workItem from="1593984159110" duration="901000" />
       <workItem from="1593995900706" duration="342000" />
       <workItem from="1594047655861" duration="12309000" />
-      <workItem from="1594122761066" duration="5362000" />
+      <workItem from="1594122761066" duration="6264000" />
+      <workItem from="1594136187678" duration="5385000" />
+      <workItem from="1594157805970" duration="3760000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -279,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594124436167</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added basic author site">
+      <created>1594128366306</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1594128366306</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +327,8 @@
     <MESSAGE value="Changed API request from http to https + some other small fixes" />
     <MESSAGE value="Many responsive changes" />
     <MESSAGE value="Fixed getting information from NBP API (No saturday and sundays)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed getting information from NBP API (No saturday and sundays)" />
+    <MESSAGE value="Added basic author site" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic author site" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -327,7 +339,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/CodSection.js</url>
-          <line>2</line>
+          <line>3</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

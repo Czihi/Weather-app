@@ -16,6 +16,8 @@ import CodesTable from "./components/CodesTable";
 import TopNavbar from "./components/TopNavbar";
 import API from "./components/API";
 import About from "./components/About"
+import ConvertRate from "./components/ConvertRate";
+import Converter from "./components/Converter";
 
 import autor from "./images/autor.png";
 
@@ -39,6 +41,14 @@ class App extends Component {
         currency: '',
         codeErr: '',
         codes: '',
+        firstRate: '',
+        secondRate: '',
+        firstValue: '',
+        secondValue: '',
+        firstCode: '',
+        secondCode: '',
+        firstErr:'',
+        secondErr:'',
         err2: '',
     };
 
@@ -54,6 +64,17 @@ class App extends Component {
         })
     };
 
+    handleFirstChange = e => {
+        this.setState({
+            firstValue: e.target.value
+        })
+    };
+
+    handleSecondChange = e => {
+        this.setState({
+            secondValue: e.target.value
+        })
+    };
 
     handleCitySubmit = e => {
         e.preventDefault();
@@ -122,7 +143,7 @@ class App extends Component {
                     rates: data.rates,
                     ratesLength: data.rates.length,
                     city: '',
-                    currency: prevState.valueNBP,
+                    currency: prevState.valueNBP.toUpperCase(),
                 }))
             })
             .catch(err => {
@@ -134,9 +155,11 @@ class App extends Component {
                     rates: "",
                     ratesLength: "",
                     city: '',
-                    currency: prevState.valueNBP,
+                    currency: prevState.valueNBP.toUpperCase(),
                 }))
             });
+        document.getElementById("oneCode").style.display="block"
+        document.getElementById("twoCodes").style.display="none"
     };
     handleCodesRequest = () => {
         const APICodes = 'https://api.nbp.pl/api/exchangerates/tables/a/';
@@ -162,7 +185,65 @@ class App extends Component {
         })
 
 
+
     };
+
+    handleFirstCurrency = (e) => {
+        e.preventDefault();
+        const APICode = `https://api.nbp.pl/api/exchangerates/rates/a/${this.state.firstValue}`;
+        fetch(APICode)
+            .then(response => {
+                if (response.ok) {
+                    return response
+                }
+                throw Error("Brak informacji o walucie")
+            })
+            .then(response => response.json())
+            .then(data => {
+                this.setState(prevState =>({
+                    firstErr: false,
+                    firstRate: data.rates[0].mid,
+                    firstCode: prevState.firstValue.toUpperCase()
+                }))
+            }).catch(err => {
+            console.log(err);
+            this.setState(prevState =>({
+                firstErr: true,
+                firstRate: '',
+                firstCode: prevState.firstValue.toUpperCase()
+            }))
+        })
+
+
+        const APICode2 = `https://api.nbp.pl/api/exchangerates/rates/a/${this.state.secondValue}`;
+        fetch(APICode2)
+            .then(response => {
+                if (response.ok) {
+                    return response
+                }
+                throw Error("Brak informacji o walucie")
+            })
+            .then(response => response.json())
+            .then(data => {
+                this.setState(prevState =>({
+                    secondErr: false,
+                    secondRate: data.rates[0].mid,
+                    secondCode: prevState.secondValue.toUpperCase()
+                }))
+            }).catch(err => {
+            console.log(err);
+            this.setState(prevState =>({
+                secondErr: true,
+                secondRate: '',
+                secondCode: prevState.secondValue.toUpperCase()
+            }))
+        })
+        document.getElementById("oneCode").style.display="none"
+        document.getElementById("twoCodes").style.display="block"
+    };
+
+
+
 
 
     render() {
@@ -224,20 +305,32 @@ class App extends Component {
                             document.title = "Narodowy Bank Polski API";
                             return (
                                 <div className="App">
+                                    <CodSection
+                                        check={this.handleCodesRequest}
+                                    />
                                     <div className="group">
                                         <Form2NBP
                                             value={this.state.valueNBP}
                                             change={this.handleInputChangeNBP}
                                             submit={this.handleCurrencySubmit}
                                         />
-                                        <CodSection
-                                            check={this.handleCodesRequest}
+                                        <ConvertRate
+                                            firstValue={this.state.firstValue}
+                                            secondValue={this.state.secondValue}
+                                            firstChange={this.handleFirstChange}
+                                            secondChange={this.handleSecondChange}
+                                            submit={this.handleFirstCurrency}
                                         />
                                     </div>
+                                    <div  id="twoCodes">
+                                    <Converter
+                                    convert={this.state}
+                                    />
+                                    </div>
+                                    <br/>
+                                    <br/>
+                                    <div id="oneCode">
                                     <div className="tendencyDiv">
-                                        <br/>
-                                        <br/>
-                                        <br/>
                                         <Tendency
                                             nowthen={this.state}
                                             period={"Tygodniowy"}
@@ -257,6 +350,7 @@ class App extends Component {
                                     <ResultNBP
                                         currencies={this.state}
                                     />
+                                    </div>
                                 </div>
                             );
                         }

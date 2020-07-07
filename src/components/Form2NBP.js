@@ -7,10 +7,10 @@ const Form2NBP = (props) => {
         <Form className="Form1" onSubmit={props.submit}>
             <Form.Group>
                 <Form.Label className="Label1">Narodowy Bank Polski API dostarczy ci najnowszych informacji o kursach waluty dla podanego przez ciebie kodu waluty</Form.Label>
-                <input  size="sm" type="text" value={props.value} onChange={props.change}
+                <input  className="inputResponsive" size="sm" type="text" value={props.value} onChange={props.change}
                               placeholder="Wpisz walutę"/>
             </Form.Group>
-            <Button variant="primary" type="Submit">Wyszukaj waluty</Button>
+            <Button className="buttonResponsive" variant="primary" type="Submit">Wyszukaj waluty</Button>
             <br/>
         </Form>
     )

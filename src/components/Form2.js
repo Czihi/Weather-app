@@ -14,7 +14,7 @@ const Form2 = (props) => {
                               placeholder="Wpisz miasto"/>
             </Form.Group>
 
-            <Button variant="primary" type="Submit">Wyszukaj miasta</Button>
+            <Button className="buttonResponsive" variant="primary" type="Submit">Wyszukaj miasta</Button>
         </Form>
     )
 }

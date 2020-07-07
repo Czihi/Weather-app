@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
+    <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="Fixed getting information from NBP API (No saturday and sundays)">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,7 +107,8 @@
       <workItem from="1593975259330" duration="733000" />
       <workItem from="1593984159110" duration="901000" />
       <workItem from="1593995900706" duration="342000" />
-      <workItem from="1594047655861" duration="11921000" />
+      <workItem from="1594047655861" duration="12309000" />
+      <workItem from="1594122761066" duration="1204000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -255,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594054205966</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixed getting information from NBP API (No saturday and sundays)">
+      <created>1594063208731</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1594063208731</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +300,8 @@
     <MESSAGE value="Changed route paths" />
     <MESSAGE value="Changed API request from http to https + some other small fixes" />
     <MESSAGE value="Many responsive changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Many responsive changes" />
+    <MESSAGE value="Fixed getting information from NBP API (No saturday and sundays)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed getting information from NBP API (No saturday and sundays)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -303,7 +313,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/CodSection.js</url>
           <line>2</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

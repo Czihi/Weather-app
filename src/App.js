@@ -16,8 +16,7 @@ import CodesTable from "./components/CodesTable";
 import TopNavbar from "./components/TopNavbar";
 import API from "./components/API";
 
-const APIKey = '19d6f8c65d72c23ed423c1b6b007518b';
-
+const APIKey = process.env.REACT_APP_AUTH_TOKEN;
 class App extends Component {
     state = {
         size: 1920,

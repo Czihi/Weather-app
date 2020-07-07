@@ -42,12 +42,12 @@ const ResultNBP = props => {
 
     if (!err2 && currency) {
         content = (
-            <div><h3 className="textResponsive2">Kursy dla: {currency}</h3>
-                <div><h4 className="textResponsive2">Data i czas zapytania: {date} ({today}) {time}</h4></div>
-                <div><h4 className="textResponsive2">Ostatni kurs dla: {currencyName}</h4></div>
+            <div><h4 className="textResponsive2">Kursy dla: {currency}</h4>
+                <div><h5 className="textResponsive2">Data i czas zapytania: {date} ({today}) {time}</h5></div>
+                <div><h5 className="textResponsive2">Ostatni kurs dla: {currencyName}</h5></div>
                 {div}
-                <div key={index}><h4 className="textResponsive2">Data: {rates[ratesLength - 1].effectiveDate} ({firstDate}) średni
-                    kurs: {rates[ratesLength - 1].mid}</h4></div>
+                <div key={index}><h5 className="textResponsive2">Data: {rates[ratesLength - 1].effectiveDate} ({firstDate})</h5></div>
+                <div><h3 className="textResponsive2">Średni kurs: {rates[ratesLength - 1].mid}</h3></div>
                 <Button className="buttonResponsive" id="showRates" onClick={show}>Pokaż kursy z poprzednich dni</Button>
                 <br/>
                 <br/>

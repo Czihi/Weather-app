@@ -7,8 +7,8 @@ import hot2 from '../images/hot2.png'
 import '../css/Image.css'
 
 const Image = (props) => {
-    let content = null
-    var temperature =props.weather.temp;
+    let content = null;
+    const temperature =props.weather.temp;
     if(!props.weather.err && props.weather.city!=null) {
         if (temperature >= 273) {
             content = (
@@ -46,9 +46,7 @@ const Image = (props) => {
         }
     }
 
-    return (
-        content
-    );
-}
+    return content;
+};
 
 export default Image

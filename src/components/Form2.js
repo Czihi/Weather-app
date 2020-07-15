@@ -17,6 +17,6 @@ const Form2 = (props) => {
             <Button className="buttonResponsive" variant="primary" type="Submit">Wyszukaj miasta</Button>
         </Form>
     )
-}
+};
 
 export default Form2

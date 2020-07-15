@@ -14,6 +14,6 @@ const Form2NBP = (props) => {
             <br/>
         </Form>
     )
-}
+};
 
 export default Form2NBP

@@ -7,19 +7,18 @@ import coins from "../images/coins.png";
 
 const API=(props)=>{
     let iconObj =
-        {"weather": weather, "coins": coins}
-    let content=(
+        {"weather": weather, "coins": coins};
+    return (
         <div className="API">
-        <h5 className="textResponsive2">{props.h3Label}</h5>
-        <Link to={props.link}>
-            <Button className="buttonResponsive" variant="primary">{props.buttonLabel}</Button>
-    <img className="mainSiteImage"
-         src={iconObj[props.source]}
-         alt={props.alt}/>
-    </Link>
+            <h5 className="textResponsive2">{props.h3Label}</h5>
+            <Link to={props.link}>
+                <Button className="buttonResponsive" variant="primary">{props.buttonLabel}</Button>
+                <img className="mainSiteImage"
+                     src={iconObj[props.source]}
+                     alt={props.alt}/>
+            </Link>
         </div>
     )
-    return content
-}
+};
 
 export default API;

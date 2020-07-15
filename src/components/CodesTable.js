@@ -2,11 +2,11 @@ import React from "react";
 import Table from "react-bootstrap/Table";
 
 const CodesTable = (props) => {
-    var codeErr = props.codeErr;
-    var codes = props.codes;
-    var elements = [];
+    const codeErr = props.codeErr;
+    const codes = props.codes;
+    let elements = [];
     window.onload=props.check;
-    for (var i = 0; i < codes.length; i++) {
+    for (let i = 0; i < codes.length; i++) {
             elements.push(
                 <tr className="Mid" key={i}>
                     <td>{i+1}</td>
@@ -16,8 +16,8 @@ const CodesTable = (props) => {
                 </tr>
             )
     }
-    var days = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
-    var day=days[new Date().getDay()]
+    const days = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
+    let day=days[new Date().getDay()];
     if(day==="Niedziela" || day==="Sobota"){
         day="Piątek"
     }
@@ -36,8 +36,8 @@ const CodesTable = (props) => {
             {elements}
             </tbody>
         </Table>
-    )
+    );
     return (codeErr ? 'Ups, nie możemy teraz zobaczyć kodów' : content)
-}
+};
 
 export default CodesTable;

@@ -26,6 +26,7 @@ const APIKey = process.env.REACT_APP_AUTH_TOKEN;
 class App extends Component {
     state = {
         size: 1920,
+        amount: 0,
         value: "",
         valueNBP: "",
         date: "",
@@ -61,6 +62,11 @@ class App extends Component {
     handleInputChangeNBP = e => {
         this.setState({
             valueNBP: e.target.value
+        })
+    };
+    handleAmountChange = e => {
+        this.setState({
+            amount: e.target.value
         })
     };
 
@@ -158,7 +164,7 @@ class App extends Component {
                     currency: prevState.valueNBP.toUpperCase(),
                 }))
             });
-        document.getElementById("oneCode").style.display="block"
+        document.getElementById("oneCode").style.display="block";
         document.getElementById("twoCodes").style.display="none"
     };
     handleCodesRequest = () => {
@@ -190,55 +196,72 @@ class App extends Component {
 
     handleFirstCurrency = (e) => {
         e.preventDefault();
-        const APICode = `https://api.nbp.pl/api/exchangerates/rates/a/${this.state.firstValue}`;
-        fetch(APICode)
-            .then(response => {
-                if (response.ok) {
-                    return response
-                }
-                throw Error("Brak informacji o walucie")
-            })
-            .then(response => response.json())
-            .then(data => {
-                this.setState(prevState =>({
-                    firstErr: false,
-                    firstRate: data.rates[0].mid,
+        if(this.state.firstValue.toUpperCase()!=="PLN") {
+            const APICode = `https://api.nbp.pl/api/exchangerates/rates/a/${this.state.firstValue}`;
+            fetch(APICode)
+                .then(response => {
+                    if (response.ok) {
+                        return response
+                    }
+                    throw Error("Brak informacji o walucie")
+                })
+                .then(response => response.json())
+                .then(data => {
+                    this.setState(prevState => ({
+                        firstErr: false,
+                        firstRate: data.rates[0].mid,
+                        firstCode: prevState.firstValue.toUpperCase()
+                    }))
+                }).catch(err => {
+                console.log(err);
+                this.setState(prevState => ({
+                    firstErr: true,
+                    firstRate: '',
                     firstCode: prevState.firstValue.toUpperCase()
                 }))
-            }).catch(err => {
-            console.log(err);
-            this.setState(prevState =>({
-                firstErr: true,
-                firstRate: '',
+            })
+        }
+        else{
+            this.setState(prevState => ({
+                firstErr: false,
+                firstRate: 1,
                 firstCode: prevState.firstValue.toUpperCase()
             }))
-        })
-
-
-        const APICode2 = `https://api.nbp.pl/api/exchangerates/rates/a/${this.state.secondValue}`;
-        fetch(APICode2)
-            .then(response => {
-                if (response.ok) {
-                    return response
-                }
-                throw Error("Brak informacji o walucie")
-            })
-            .then(response => response.json())
-            .then(data => {
-                this.setState(prevState =>({
-                    secondErr: false,
-                    secondRate: data.rates[0].mid,
+        }
+        if(this.state.secondValue.toUpperCase()!=="PLN") {
+            const APICode2 = `https://api.nbp.pl/api/exchangerates/rates/a/${this.state.secondValue}`;
+            fetch(APICode2)
+                .then(response => {
+                    if (response.ok) {
+                        return response
+                    }
+                    throw Error("Brak informacji o walucie")
+                })
+                .then(response => response.json())
+                .then(data => {
+                    this.setState(prevState => ({
+                        secondErr: false,
+                        secondRate: data.rates[0].mid,
+                        secondCode: prevState.secondValue.toUpperCase()
+                    }))
+                }).catch(err => {
+                console.log(err);
+                this.setState(prevState => ({
+                    secondErr: true,
+                    secondRate: '',
                     secondCode: prevState.secondValue.toUpperCase()
                 }))
-            }).catch(err => {
-            console.log(err);
-            this.setState(prevState =>({
-                secondErr: true,
-                secondRate: '',
+            });
+        }
+        else{
+            this.setState(prevState => ({
+                secondErr: false,
+                secondRate: 1,
                 secondCode: prevState.secondValue.toUpperCase()
             }))
-        })
-        document.getElementById("oneCode").style.display="none"
+        }
+
+        document.getElementById("oneCode").style.display="none";
         document.getElementById("twoCodes").style.display="block"
     };
 
@@ -315,8 +338,10 @@ class App extends Component {
                                             submit={this.handleCurrencySubmit}
                                         />
                                         <ConvertRate
+                                            amountValue={this.state.amount}
                                             firstValue={this.state.firstValue}
                                             secondValue={this.state.secondValue}
+                                            amountChange={this.handleAmountChange}
                                             firstChange={this.handleFirstChange}
                                             secondChange={this.handleSecondChange}
                                             submit={this.handleFirstCurrency}
@@ -358,7 +383,7 @@ class App extends Component {
 
                     <Route path="/Weather-app/codes" render={
                         () => {
-                            document.title = "Kursy walut"
+                            document.title = "Kursy walut";
                             return (
                                 <div className="App">
 
@@ -374,7 +399,7 @@ class App extends Component {
 
                     <Route path="/Weather-app/author" render={
                         () => {
-                            document.title = "Autor"
+                            document.title = "Autor";
 
                             return (
                                 <div className="App">

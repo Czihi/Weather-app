@@ -4,8 +4,8 @@ import Table from 'react-bootstrap/Table';
 
 const ResultNBP = props => {
     function show() {
-        var list = document.getElementById("lista");
-        var button = document.getElementById("showRates");
+        const list = document.getElementById("lista");
+        const button = document.getElementById("showRates");
         if (list.style.display !== "table") {
             list.style.display = "table";
             button.innerText = "Ukryj kursy z poprzednich dni"
@@ -14,15 +14,15 @@ const ResultNBP = props => {
             button.innerText = "Pokaż kursy z poprzednich dni"
         }
     }
-    var days = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
-    const {currency, currencyName, date, rates, ratesLength, err2} = props.currencies
+    const days = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
+    const {currency, currencyName, date, rates, ratesLength, err2} = props.currencies;
     const time = new Date().toLocaleDateString();
     let content = null;
-    var elements = [];
-    var index = 0;
-    var today=days[new Date().getDay()];
-    var div=null
-    for (var i = ratesLength - 2; i >= 0; i--) {
+    let elements = [];
+    let index = 0;
+    const today=days[new Date().getDay()];
+    let div=null;
+    for (let i = ratesLength - 2; i >= 0; i--) {
         index++;
         var dat = days[new Date(rates[i].effectiveDate).getDay()];
         elements.push(<tr className="Mid" key={index}>

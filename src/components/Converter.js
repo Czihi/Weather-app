@@ -1,14 +1,23 @@
 import React from "react";
 const Converter =(props)=> {
-    const {firstErr, secondErr, firstCode, secondCode, firstRate, secondRate} = props.convert
+    const {firstErr, secondErr, firstCode, secondCode, firstRate, secondRate, amount} = props.convert;
     let content = null;
     if (!firstErr && !secondErr && firstCode && secondCode && firstRate && secondRate) {
-        var ans = (firstRate / secondRate).toFixed(4)
-        content = (
-            <div>
-                <br/>
-                <h3 className="textResponsive2">Jeden ({firstCode}) to {ans} ({secondCode})</h3>
-            </div>)
+        const ans = (amount * firstRate / secondRate).toFixed(4);
+        if(isNaN(ans) || ans<0) {
+            content=(
+                <div>
+                    <br/>
+                    <h3 className="textResponsive2">Niepoprawna kwota</h3>
+                </div>)
+        }
+    else{
+            content = (
+                <div>
+                    <br/>
+                    <h3 className="textResponsive2">{+amount} ({firstCode}) to {+ans} ({secondCode})</h3>
+                </div>)
+        }
     }
     if (firstErr && secondErr) {
         return (

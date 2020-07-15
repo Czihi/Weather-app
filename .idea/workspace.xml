@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ConvertRate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Converter.js" afterDir="false" />
+    <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="Added amount field to be converted and fixed warnings">
+      <change afterPath="$PROJECT_DIR$/src/components/Localisation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CodesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ConvertRate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConvertRate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Converter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form2NBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2NBP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tendency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tendency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopNavbarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbarContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +126,10 @@
       <workItem from="1594047655861" duration="12309000" />
       <workItem from="1594122761066" duration="6264000" />
       <workItem from="1594136187678" duration="5385000" />
-      <workItem from="1594157805970" duration="3760000" />
+      <workItem from="1594157805970" duration="4351000" />
+      <workItem from="1594216215202" duration="3963000" />
+      <workItem from="1594251460311" duration="6062000" />
+      <workItem from="1594839470347" duration="5957000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -290,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594128366306</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added currency converter + some small fixes">
+      <created>1594161646097</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1594161646097</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,21 +351,8 @@
     <MESSAGE value="Many responsive changes" />
     <MESSAGE value="Fixed getting information from NBP API (No saturday and sundays)" />
     <MESSAGE value="Added basic author site" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic author site" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Form2.js</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/CodSection.js</url>
-          <line>3</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added currency converter + some small fixes" />
+    <MESSAGE value="Added amount field to be converted and fixed warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added amount field to be converted and fixed warnings" />
   </component>
 </project>

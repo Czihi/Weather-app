@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import {Link} from "react-router-dom";
 import czihi from "../images/Czihi.png"
@@ -21,26 +21,25 @@ function useWindowSize() {
 
 const TopNavbarContent=(props)=>{
     const width = useWindowSize();
-    var description=props.description;
+    let description=props.description;
     let iconObj =
-        {"czihi": czihi, "home": home, "nbp": nbp, "omw": omw}
+        {"czihi": czihi, "home": home, "nbp": nbp, "omw": omw};
     if(width<900){
         description=""
     }
-    let content=(
+    return (
         <Link to={props.to}>
-        <Navbar.Brand id="test">
-            <img
-                alt={props.description}
-                src={iconObj[props.source]}
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-            />{' '}
-            {description}
-        </Navbar.Brand>
+            <Navbar.Brand id="test">
+                <img
+                    alt={props.description}
+                    src={iconObj[props.source]}
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                />{' '}
+                {description}
+            </Navbar.Brand>
         </Link>
-    );
-    return content
+    )
 };
 export default TopNavbarContent;

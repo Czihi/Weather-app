@@ -4,12 +4,12 @@ import falling from '../images/falling.png'
 import '../css/App.css'
 const Tendency = (props)=>{
     let content = null;
-    const {currency, rates, ratesLength, err2} = props.nowthen
-    const period=props.period
-    const periodDiff=props.periodDiff
-    var i=ratesLength-1
+    const {currency, rates, ratesLength, err2} = props.nowthen;
+    const period=props.period;
+    const periodDiff=props.periodDiff;
+    let i=ratesLength-1;
     if (!err2 && currency) {
-        var diff=+(rates[i].mid - rates[i-periodDiff].mid).toFixed(6)
+        const diff=+(rates[i].mid - rates[i-periodDiff].mid).toFixed(6);
         if (diff>=0) {
             content = (
                 <div className="tendencyDiv">
@@ -32,6 +32,6 @@ const Tendency = (props)=>{
         </div>
 
     );
-}
+};
 
 export default Tendency

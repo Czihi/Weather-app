@@ -12,14 +12,14 @@ const Tendency = (props)=>{
         const diff=+(rates[i].mid - rates[i-periodDiff].mid).toFixed(6);
         if (diff>=0) {
             content = (
-                <div className="tendencyDiv">
+                <div>
                     <h3 className="textResponsive">{period} wzrost: {diff}</h3>
                     <img className="Tendency" src={rising} alt="rising"/>
                 </div>
             )
         } else {
             content = (
-                <div className="tendencyDiv">
+                <div>
                     <h3 className="textResponsive">{period} spadek: {diff}</h3>
                     <img className="Tendency" src={falling} alt="falling"/>
                 </div>
@@ -27,7 +27,7 @@ const Tendency = (props)=>{
         }
     }
     return (
-        <div className="result">
+        <div className="tendencyDiv">
             {err2 ? null : content}
         </div>
 

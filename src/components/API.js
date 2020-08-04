@@ -10,9 +10,11 @@ const API=(props)=>{
         {"weather": weather, "coins": coins};
     return (
         <div className="API">
-            <h5 className="textResponsive2">{props.h3Label}</h5>
+            <h5 className="text-responsive-api">{props.h3Label}</h5>
+            <br/>
             <Link to={props.link}>
                 <Button className="buttonResponsive" variant="primary">{props.buttonLabel}</Button>
+                <br/>
                 <img className="mainSiteImage"
                      src={iconObj[props.source]}
                      alt={props.alt}/>

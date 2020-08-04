@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="Added amount field to be converted and fixed warnings">
-      <change afterPath="$PROJECT_DIR$/src/components/Localisation.js" afterDir="false" />
+    <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BottomBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/favicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ConvertRate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConvertRate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Converter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Form2NBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2NBP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Tendency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tendency.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopNavbarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbarContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/coins.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/coins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/falling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/falling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/rising.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rising.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/weather.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,27 +55,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Studia\first-app\src\images" />
+      <recent name="C:\Studia\first-app\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Studia\first-app\public" />
       <recent name="C:\Studia\first-app\src\css" />
       <recent name="C:\Studia\first-app\src\components" />
-      <recent name="C:\Studia\first-app\src\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Studia\first-app\public" />
       <recent name="C:\Studia\first-app\src\images" />
     </key>
   </component>
@@ -129,7 +134,10 @@
       <workItem from="1594157805970" duration="4351000" />
       <workItem from="1594216215202" duration="3963000" />
       <workItem from="1594251460311" duration="6062000" />
-      <workItem from="1594839470347" duration="5957000" />
+      <workItem from="1594839470347" duration="6298000" />
+      <workItem from="1594990278561" duration="1087000" />
+      <workItem from="1595251113280" duration="555000" />
+      <workItem from="1596543628628" duration="14457000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -313,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594161646097</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added amount field to be converted and fixed warnings">
+      <created>1594845741735</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1594845741735</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

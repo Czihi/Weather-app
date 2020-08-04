@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 const CodSection = props => {
     return (
         <div className="checkCodes">
-            <Form.Label><h4>Nie wiesz jaki kod ma interesująca Cię waluta?</h4></Form.Label>
+            <Form.Label><h4 className="subtitleResponsive">Nie wiesz jaki kod ma interesująca Cię waluta?</h4></Form.Label>
             <br/>
             <Link to="/Weather-app/codes">
                 <Button className="buttonResponsive" variant="primary" onClick={props.check}> Sprawdź tutaj!</Button>

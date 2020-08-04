@@ -2,7 +2,7 @@ import React, {useLayoutEffect, useState} from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import {Link} from "react-router-dom";
 import czihi from "../images/Czihi.png"
-import home from "../images/logo192.png"
+import home from "../images/favicon.png"
 import nbp from "../images/NBP.png"
 import omw from "../images/OWM.png"
 
@@ -36,6 +36,7 @@ const TopNavbarContent=(props)=>{
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
+                    draggable={false} unselectable={true}
                 />{' '}
                 {description}
             </Navbar.Brand>

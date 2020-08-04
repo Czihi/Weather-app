@@ -4,13 +4,13 @@ import Form from 'react-bootstrap/Form';
 
 const Form2 = (props) => {
     return (
-        <Form className="Form1" onSubmit={props.submit}>
+        <Form className="weather-form" onSubmit={props.submit}>
             <Form.Group >
-                <Form.Label className="Label1">
+                <Form.Label className="subtitleResponsive">
                         Open Weather Map API dostarczy ci najnowszych informacji o pogodzie w wybranym przez ciebie
                         mieście
                 </Form.Label>
-                <input  size="sm" type="text" value={props.value} onChange={props.change}
+                <input  className="inputResponsive" size="sm" type="text" value={props.value} onChange={props.change}
                               placeholder="Wpisz miasto"/>
             </Form.Group>
 

@@ -8,7 +8,8 @@ const Result = props => {
     let content = null;
     if (!err && city) {
         content = (
-            <div>Pogoda dla: {city}
+            <div className="result-weather">
+                <div className="subtitleResponsive">Pogoda dla: {city}</div>
                 <div>Data i czas: {time} {date}</div>
                 <div>Temperatura: {(temp - 273).toFixed(2)} stopni Celsjusza</div>
                 <div>Odczuwalna: {(feels - 273).toFixed(2)} stopni Celsjusza</div>

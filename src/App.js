@@ -18,8 +18,7 @@ import API from "./components/API";
 import About from "./components/About"
 import ConvertRate from "./components/ConvertRate";
 import Converter from "./components/Converter";
-
-import autor from "./images/autor.png";
+import BottomBar from "./components/BottomBar";
 
 
 const APIKey = process.env.REACT_APP_AUTH_TOKEN;
@@ -274,13 +273,14 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <TopNavbar/>
+                    <BottomBar/>
                     <Route path="/Weather-app" exact render={
                         () => {
                             document.title = "Strona główna";
                             return (
                                 <div className="App">
-                                    <h3 className="textResponsive2">Interesują Cię:</h3>
-                                    <div className="tendencyDiv">
+                                    <h3 className="subtitleResponsive">Interesują Cię:</h3>
+                                    <div className="api-group">
                                         <API
                                             h3Label="Kursy walut"
                                             link="/Weather-app/currencies"
@@ -331,7 +331,7 @@ class App extends Component {
                                     <CodSection
                                         check={this.handleCodesRequest}
                                     />
-                                    <div className="group">
+                                    <div className="groupForms">
                                         <Form2NBP
                                             value={this.state.valueNBP}
                                             change={this.handleInputChangeNBP}
@@ -355,7 +355,7 @@ class App extends Component {
                                     <br/>
                                     <br/>
                                     <div id="oneCode">
-                                    <div className="tendencyDiv">
+                                    <div className="tendencies-group">
                                         <Tendency
                                             nowthen={this.state}
                                             period={"Tygodniowy"}
@@ -403,10 +403,7 @@ class App extends Component {
 
                             return (
                                 <div className="App">
-                                    <div className="tendencyDiv">
-                                    <img className="autorResponsive" src={autor} alt="autor"/>
                                     <About/>
-                                    </div>
                                 </div>
                             )
                         }

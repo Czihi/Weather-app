@@ -1,29 +1,49 @@
 .App {
+    min-height: 90%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #e6edf5 repeat center center fixed;
     text-align: center;
-    margin-top: 56px;
+    box-shadow: 0 0 5px #e6edf5;
 }
 
-.Form1 {
-    margin-right: 3%;
-    margin-left: 3%;
-    max-width: 60%;
-    align-self: center;
+.rateForm {
+    margin-top: 2%;
+    flex: 1 1 400px;
 }
 
-.Label1 {
-    display: flex;
-    font-size: min(3vw, 20px);
-    font-weight: bolder;
+.weather-form {
+}
+
+.label {
+    text-align: center;
+    font-size: calc(1vw + 1vh);
+    font-weight: 600;
+    color: #032f55
 }
 
 .Button1 {
     display: flex;
 }
 
+.result {
+    color: #032f55;
+    font-size: calc(1vw + 1vh);
+}
+
+.tendencies-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
 .buttonResponsive {
-    width: 100%;
-    max-width: 60%;
-    font-size: min(3vw, 15px);
+    width: 50%;
+    background-color: #032f55;
+    font-size: calc(1vw + 1vh);
 }
 
 .Mid {
@@ -36,30 +56,31 @@
 }
 
 .tendencyDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    align-self: center;
+    flex: 1 1;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-.group {
+.groupForms {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 3%;
-
     margin-right: 3%;
     align-content: center;
 }
 
+.subtitleResponsive {
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: 700;
+    color: #032f55;
+}
+
 .Tendency {
+    display: inline;
     margin-bottom: 1%;
-    width: 100%;
+    width: 10%;
     height: auto;
-    max-height: 25px;
-    max-width: 50px;
-    margin-left: 10px;
+    margin-left: 2%;
 }
 
 .backButton {
@@ -71,18 +92,47 @@
 .topNavbar {
     justify-content: space-between;
     position: fixed;
+    height: 40px;
     top: 0;
     width: 100%;
+    z-index: 2;
+}
+
+.api-group {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .API {
-    margin-left: 3%;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px 5px #032f55;
+    flex: 1 1 200px;
+    margin: 3%;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.API:hover {
+    transition: 0.5s;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.API:hover:nth-child(odd) {
+    transform: translateX(3vw);
+}
+
+.API:hover:nth-child(even) {
+    transform: translateX(-3vw);
+}
+
+.result-weather {
+    font-weight: 600;
 }
 
 .mainSiteImage {
-    width: 100%;
+    width: 50%;
     height: auto;
-
 }
 
 .littleImage {
@@ -91,28 +141,68 @@
 }
 
 .textResponsive {
-    font-size: max(8px, 2vw);
+    display: inline;
+    font-size: calc(1vw + 1vh);
+    color: #032f55;
 }
 
-.textResponsive2 {
-    font-size: min(3vw, 20px);
+.text-responsive-api {
+    font-size: calc(2vw + 2vh);
+    color: #032f55;
 }
 
-.autorResponsive {
-    margin-left: 3%;
-    margin-top: 3%;
-    width: 50%;
+.about-flex{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-links{
+    flex: 3 1;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.social-link{
+    font-size: calc(1vw + 1vh);
+    color: #032f55;
+    font-weight: 700;
+}
+.line{
+    line-height: 1vw;
+}
+.authorDiv{
+    flex: 1 1;
+}
+.link:hover{
+    text-decoration: none;
+}
+.authorResponsive {
+    border-radius: 50%;
+    margin-left: 5%;
+    width: 100%;
     height: auto;
-    max-width: 300px;
-    max-height: 300px;
 }
 
 .inputResponsive {
-    width: 60%;
-    height: auto;
-    font-size: max(8px, 1vw);
+    margin: 1%;
+    border: 0;
+    border-radius: 0.2vw;
+    border-left: 0.3vw solid #032f55;
+    text-indent: 15px;
+    box-shadow: 0 0 10px #032f55;
+    width: 50%;
+    height: calc(2vw + 2vh);
+    font-size: calc(1vw + 1vh)
 }
 
 .checkCodes {
+    padding-top: 2%
+}
 
+.bottom-bar {
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #343a40;
 }

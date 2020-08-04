@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b828778431750889a3903e7f169af884",
-    "url": "/Weather-app/static/media/hot2.b8287784.png"
+    "revision": "4717ffee24066458590662b085b9ad38",
+    "url": "/Weather-app/static/media/rising.4717ffee.png"
   },
   {
-    "revision": "86ca961fdaf4b2a80632",
-    "url": "/Weather-app/static/css/main.a5533f31.chunk.css"
+    "revision": "911aedb5c109eb6bb5c5",
+    "url": "/Weather-app/static/css/main.6157ed88.chunk.css"
   },
   {
     "revision": "cd23450c59ffd8f53315",
@@ -28,8 +28,16 @@ self.__precacheManifest = [
     "url": "/Weather-app/static/media/hot.a76ae279.png"
   },
   {
-    "revision": "86ca961fdaf4b2a80632",
-    "url": "/Weather-app/static/js/main.c9a9131b.chunk.js"
+    "revision": "b828778431750889a3903e7f169af884",
+    "url": "/Weather-app/static/media/hot2.b8287784.png"
+  },
+  {
+    "revision": "911aedb5c109eb6bb5c5",
+    "url": "/Weather-app/static/js/main.70800b40.chunk.js"
+  },
+  {
+    "revision": "4c6da92fead72c93c18b3b72a89a752e",
+    "url": "/Weather-app/static/media/falling.4c6da92f.png"
   },
   {
     "revision": "16b588aacdead0623d7ea8391a130537",
@@ -44,19 +52,19 @@ self.__precacheManifest = [
     "url": "/Weather-app/static/media/OWM.19f5e3c9.png"
   },
   {
-    "revision": "c270476974db6ad6550f69cf3f17407f",
-    "url": "/Weather-app/static/media/weather.c2704769.png"
+    "revision": "334bbf48990fe5c875de559bf0a3ca84",
+    "url": "/Weather-app/static/media/weather.334bbf48.png"
   },
   {
-    "revision": "17dbbefc58545d87cccdbbabc5fd44f6",
-    "url": "/Weather-app/static/media/coins.17dbbefc.png"
+    "revision": "65610cc1e300d348034f31d29b359bbe",
+    "url": "/Weather-app/static/media/coins.65610cc1.png"
   },
   {
     "revision": "ec0e3a3354db07f02d1a",
     "url": "/Weather-app/static/css/2.301cbc31.chunk.css"
   },
   {
-    "revision": "1a0dad7676ac94ee0ef06322ce4f3dc6",
+    "revision": "03b63e96849ede7451dd4bcb52ae0d42",
     "url": "/Weather-app/index.html"
   }
 ];

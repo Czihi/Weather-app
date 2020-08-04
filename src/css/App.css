@@ -5,6 +5,7 @@
     position: absolute;
     top: 30px;
     left: 0;
+    margin-bottom: 40px;
     background: #e6edf5 repeat center center fixed;
     text-align: center;
     box-shadow: 0 0 5px #e6edf5;
@@ -205,4 +206,8 @@
     width: 100%;
     height: 40px;
     background-color: #343a40;
+}
+.code-table{
+    margin-top: -20px;
+    margin-bottom: 0;
 }

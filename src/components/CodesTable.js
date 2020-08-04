@@ -23,7 +23,7 @@ const CodesTable = (props) => {
     }
 
     let content = (
-        <Table striped bordered hover size="sm" variant="dark">
+        <Table className="code-table" striped bordered hover size="sm" variant="dark">
             <thead>
             <tr>
                 <th>#</th>

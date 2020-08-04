@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BottomBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/favicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConvertRate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConvertRate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form2.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Form2NBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form2NBP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResultNBP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResultNBP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tendency.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Tendency.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopNavbarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbarContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CodesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/coins.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/coins.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/falling.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/falling.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/rising.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/rising.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/weather.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/weather.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +119,7 @@
       <workItem from="1594839470347" duration="6298000" />
       <workItem from="1594990278561" duration="1087000" />
       <workItem from="1595251113280" duration="555000" />
-      <workItem from="1596543628628" duration="14457000" />
+      <workItem from="1596543628628" duration="14927000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -328,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594845741735</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Changed graphic design">
+      <created>1596559033269</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1596559033269</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +357,7 @@
     <MESSAGE value="Added basic author site" />
     <MESSAGE value="Added currency converter + some small fixes" />
     <MESSAGE value="Added amount field to be converted and fixed warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added amount field to be converted and fixed warnings" />
+    <MESSAGE value="Changed graphic design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed graphic design" />
   </component>
 </project>

@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "4717ffee24066458590662b085b9ad38",
-    "url": "/Weather-app/static/media/rising.4717ffee.png"
+    "revision": "16b588aacdead0623d7ea8391a130537",
+    "url": "/Weather-app/static/media/Czihi.16b588aa.png"
   },
   {
-    "revision": "911aedb5c109eb6bb5c5",
-    "url": "/Weather-app/static/css/main.6157ed88.chunk.css"
+    "revision": "a2be1703283bfe52c32a",
+    "url": "/Weather-app/static/css/main.c700f2d2.chunk.css"
   },
   {
     "revision": "cd23450c59ffd8f53315",
@@ -16,32 +16,20 @@ self.__precacheManifest = [
     "url": "/Weather-app/static/media/autor.4bc8cd86.png"
   },
   {
-    "revision": "ec0e3a3354db07f02d1a",
-    "url": "/Weather-app/static/js/2.7b5a4878.chunk.js"
+    "revision": "ece38a8c050ebdc7a8e8",
+    "url": "/Weather-app/static/js/2.d388264a.chunk.js"
   },
   {
-    "revision": "d6a6e2338b57d94cb1545930876d0359",
-    "url": "/Weather-app/static/media/cold.d6a6e233.png"
-  },
-  {
-    "revision": "a76ae2791409b6ef63279e1baa02937b",
-    "url": "/Weather-app/static/media/hot.a76ae279.png"
-  },
-  {
-    "revision": "b828778431750889a3903e7f169af884",
-    "url": "/Weather-app/static/media/hot2.b8287784.png"
-  },
-  {
-    "revision": "911aedb5c109eb6bb5c5",
-    "url": "/Weather-app/static/js/main.70800b40.chunk.js"
+    "revision": "4717ffee24066458590662b085b9ad38",
+    "url": "/Weather-app/static/media/rising.4717ffee.png"
   },
   {
     "revision": "4c6da92fead72c93c18b3b72a89a752e",
     "url": "/Weather-app/static/media/falling.4c6da92f.png"
   },
   {
-    "revision": "16b588aacdead0623d7ea8391a130537",
-    "url": "/Weather-app/static/media/Czihi.16b588aa.png"
+    "revision": "a2be1703283bfe52c32a",
+    "url": "/Weather-app/static/js/main.1a927689.chunk.js"
   },
   {
     "revision": "ce7bee1f7b4ecadd6694c5abaa0a5c2d",
@@ -60,11 +48,11 @@ self.__precacheManifest = [
     "url": "/Weather-app/static/media/coins.65610cc1.png"
   },
   {
-    "revision": "ec0e3a3354db07f02d1a",
+    "revision": "ece38a8c050ebdc7a8e8",
     "url": "/Weather-app/static/css/2.301cbc31.chunk.css"
   },
   {
-    "revision": "03b63e96849ede7451dd4bcb52ae0d42",
+    "revision": "5368029e8c158d3d2907b1f780cc3723",
     "url": "/Weather-app/index.html"
   }
 ];

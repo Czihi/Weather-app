@@ -9,7 +9,6 @@ import Form2 from './components/Form2';
 import Result from './components/Result';
 import Form2NBP from './components/Form2NBP';
 import ResultNBP from './components/ResultNBP';
-import Image from './components/Image';
 import Tendency from './components/Tendency';
 import CodSection from "./components/CodSection";
 import CodesTable from "./components/CodesTable";
@@ -37,6 +36,7 @@ class App extends Component {
         pressure: '',
         wind: '',
         clouds: '',
+        icon: 'https://openweathermap.org/img/wn/10d@2x.png',
         err: '',
         currency: '',
         codeErr: '',
@@ -105,9 +105,11 @@ class App extends Component {
                     pressure: data.main.pressure,
                     wind: data.wind.speed,
                     clouds: data.clouds.all,
+                    icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
                     currency: '',
                     feels: data.main.feels_like,
-                }))
+                }
+                ))
             })
             .catch(err => {
                 console.log(err);
@@ -313,9 +315,6 @@ class App extends Component {
                                         />
                                     </div>
                                     <Result
-                                        weather={this.state}
-                                    />
-                                    <Image
                                         weather={this.state}
                                     />
                                 </div>

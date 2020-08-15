@@ -36,7 +36,7 @@ const TopNavbarContent=(props)=>{
                     width="30"
                     height="30"
                     className="d-inline-block align-top"
-                    draggable={false} unselectable={true}
+                    draggable={false} unselectable="true"
                 />{' '}
                 {description}
             </Navbar.Brand>

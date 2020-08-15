@@ -128,6 +128,7 @@
 }
 
 .result-weather {
+    margin-top: calc(1.5vh + 1.5vw);
     font-weight: 600;
 }
 
@@ -210,4 +211,54 @@
 .code-table{
     margin-top: -20px;
     margin-bottom: 0;
+}
+.background{
+    background-image: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    border-radius: 40px;
+    width: calc(15vw + 15vh);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.background__icon{
+    flex: 1 1;
+}
+.background__group{
+    flex: 4 1;
+}
+.background__temperature{
+    color: white;
+    font-size: 34px;
+}
+.background__time{;
+    color: white;
+    font-size: 24px;
+}
+.result__data{
+    display: none;
+}
+.result__button{
+    margin-top: calc(1.5vw + 1.5vh);
+    margin-bottom: calc(1.5vh + 1.5vw);
+    width: calc(15vw + 15vh);
+    background-color: #032f55;
+    font-size: calc(1vw + 1vh);
+    border-radius: 5px;
+}
+
+@media (max-width: 800px){
+    .background__icon{
+    max-height: 50px;
+        max-width: 50px;
+    }
+    .background__temperature{
+        font-size: 17px;
+    }
+    .background__time{;
+        color: white;
+        font-size: 12px;
+    }
+    .background{
+        border-radius: 20px;
+    }
 }

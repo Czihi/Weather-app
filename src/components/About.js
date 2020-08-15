@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className="about-flex">
             <div className="authorDiv">
-                <img className="authorResponsive" src={author} alt="author" draggable={false} unselectable={true}/>
+                <img className="authorResponsive" src={author} alt="author" draggable={false} unselectable="true"/>
             </div>
             <div className="social-links line">
 

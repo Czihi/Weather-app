@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3b9aa767-37c4-4e1b-97d9-d4c4b5df0aac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CodesTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CodesTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TopNavbarContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopNavbarContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,7 +123,10 @@
       <workItem from="1594839470347" duration="6298000" />
       <workItem from="1594990278561" duration="1087000" />
       <workItem from="1595251113280" duration="555000" />
-      <workItem from="1596543628628" duration="14927000" />
+      <workItem from="1596543628628" duration="15640000" />
+      <workItem from="1597432943573" duration="2715000" />
+      <workItem from="1597435779815" duration="1877000" />
+      <workItem from="1597514959880" duration="1610000" />
     </task>
     <task id="LOCAL-00001" summary="Project with weather app, added few labels and images">
       <created>1593779450657</created>
@@ -317,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596559033269</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Changed graphic design">
+      <created>1596559581472</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1596559581472</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
